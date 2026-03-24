@@ -1,0 +1,99 @@
+body {
+  font-family: 'Inter', sans-serif;/* Fuente para todo el sitio */
+  background-color: #eef2ff; /* Fondo azul claro */
+  display: flex;/* Centra horizontalmente el contenido */
+  justify-content:center;/*centra todo*/    
+ 
+}
+/* TAMAÑO PRINCIPAL DE TODO */
+.app {
+  width: 100%;/* Ocupa todo el ancho disponible */
+  max-width: 900px;/* Pero no más de 900px */
+}
+/* encabezado */
+.header {
+  text-align: center;/* Centra el texto */
+}
+/* Apartado añadir contacto */
+.bloque {
+  background-color: #fff;/* Fondo blanco */
+  border-radius: 16px;/* Bordes redondeados */
+  padding: 20px;/* Espacio dentro del bloque de añadr c */
+  margin-bottom: 20px; /* Espacio entre añadir contacto y buscar*/
+}
+.form-group {
+  margin-bottom: 15px; /* Espacio entre nombre, tlefono, email y etiquetas */
+}
+/*DONDE SE METEN LOS DATOS*/
+.form input {
+  width: 100%;/* Ocupa todo el ancho del bloque */
+  padding: 10px;/* Espacio de las partes a rellenar*/
+  border-radius: 10px;/* Bordes redondeados */
+  border: 1px solid #ccc;/* Borde gris */
+}
+/* BOTÓN añadir contacto */
+.btn {
+  display: block;/* Bloque independiente */
+  width: 200px; /* Ancho fijo */
+  margin: 15px auto 0;/* Centrado horizontal y espacio arriba */
+  padding: 10px;/* Espacio dentro del botón */
+  border-radius: 10px;/* Bordes redondeados */
+  border: none;/* Sin borde */
+  background-color: #6366f1;/* Fondo azul */
+  color: #fff;/* Texto blanco */
+  cursor: pointer;/* Cambia cursor al pasar */
+}
+/* MENSAJE de confirmación o error */
+.mensaje {
+  text-align: center;/* Centrado */
+  font-size: 14px;/* Tamaño de letra */
+  margin-top: 8px;/* Espacio arriba */
+}
+/* Buscar contacto */
+.top-bar {
+  text-align: center;/* Centrado */
+  margin-bottom: 15px;/* Espacio debajo */
+}
+#busqueda {
+  width: 80%;/* Ancho */
+  padding: 10px;/* Espacio dentro de la casilla*/
+  border-radius: 10px;/* Bordes redondeados */
+  border: 1px solid #ccc;/* Borde gris */
+}
+/* LISTADO DE CONTACTOS */
+.contacto {
+  background-color: #fff;/* Fondo blanco */
+  border-radius: 16px;/* Bordes redondeados */
+  padding: 16px;/* Espacio interno */
+  margin-bottom: 12px;/* Espacio debajo de cada contacto */
+  border: 1px solid #ddd;/* Borde gris */
+}
+/*para la informacion de los conatcotos*/
+.contacto .info span {
+  display: inline-block;/* Cada etiqueta al lado */
+  background-color: #f1f5f9; /* Fondo gris claro */
+  padding: 5px 8px;/* Espacio dentro de cada etiqueta */
+  margin-right: 5px;/* Espacio a la derecha */
+  margin-bottom: 5px;/* Espacio abajo */
+  border-radius: 8px;/* Bordes redondeados */
+  font-size: 12px;/* Letra pequeña */
+  color: #334155;/* Color gris oscuro */
+}
+/*Para los botones de borrar y editar*/
+.contacto .acciones button {
+  padding: 6px 10px;/* Espacio dentro del botón */
+  border: none;/* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer;/* Cursor puntero */
+  font-size: 12px;/* Letra pequeña */
+  margin-right: 5px;/* Espacio entre botones */
+
+}
+.contacto .acciones button.editar {
+  background-color: #e0e7ff;/* Fondo azul claro en editar */
+}
+.contacto .acciones button.borrar {
+  background-color: #fee2e2;/* Fondo rojo claro  en borrar*/
+}
+
+}
