@@ -17,13 +17,20 @@ window.addEventListener('load', () => {
   }
 });
 
+const limpiarBtn = document.getElementById('limpiarBtn');
+
+limpiarBtn.onclick = () => {
+  form.reset(); //limpia todos los inputs del formulario
+ 
+};
+
 /* --- GUARDAR CONTACTOS --- */
-const guardar = () => localStorage.setItem('contactos', JSON.stringify(contactos)); // Guarda contactos
+const guardar = () => localStorage.setItem('contactos', JSON.stringify(contactos)); // Guarda contactos stringify convierte el array en texto
 
 /* --- MOSTRAR CONTACTOS --- */
 function render(list) {
   lista.innerHTML = ''; // Limpia la lista
-  list.forEach(c => { 
+  list.forEach(c => {  //Recorro los contactos 
     const div = document.createElement('div'); 
     div.className = 'contacto'; 
     div.innerHTML = `
